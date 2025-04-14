@@ -14,5 +14,8 @@ main:
     authors: Jiacheng Zhang, Jiawen Li, Maryam Arab, Steve Oney
     conference_short: UIST
     conference: The 38th Annual ACM Symposium on User Interface Software and Technology <strong>(UIST)</strong>, 2025.
+    pdf: https://arxiv.org/pdf/2306.00988.pdf
+    code: https://github.com/MrGiovanni/ContinualLearning
+    bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/multiclick-teaser.png
     notes: In submission

@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+I am an undergraduate student at Univesity of Michigan. 
 
 ## Research Interests
 
@@ -12,7 +12,7 @@ I am a Ph.D. student at ...
 
 ## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
+- **[April. 2025]** My first co-authored paper Multiclick: cross-tab automation via action generalization has been submitted to UIST 2025. Hope to be accepted!
 
 {% include_relative _includes/publications.md %}
 

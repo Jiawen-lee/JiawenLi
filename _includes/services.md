@@ -8,7 +8,8 @@
   <li><a href="https://eccv2022.ecva.net/"><autocolor>European Conference on Computer Vision (ECCV) 2022</autocolor></a></li> -->
   <li><autocolor>
   Teaching Assistant for VG101 Introduction to Computer and Programing
-  </li><autocolor>
+  </li>
+  <li><autocolor>
   Writing Consultabt at JI Writing Center
   </li>
 </ul>

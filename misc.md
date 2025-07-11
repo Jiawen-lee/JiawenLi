@@ -8,4 +8,5 @@ I am an amateur of ancient Chinese fortune-telling - [Four Pillars](https://en.w
 
 Feel free to contact me if you are interested in such things and I can tell about your future if possible. 
 
-<\center><img src="https://raw.githubusercontent.com/leeJiawen/blog-img/main/9cff50fa-1d86-4aad-a15b-1a8074671e3b.png" style="zoom:67%;" /><\center>
+<img src="https://raw.githubusercontent.com/leeJiawen/blog-img/main/9cff50fa-1d86-4aad-a15b-1a8074671e3b.png" 
+    style="display:block; margin: 0 auto; zoom:67%;" />

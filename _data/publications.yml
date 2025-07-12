@@ -10,7 +10,7 @@ main:
   #   image: ./assets/img/teaser_example_2.png
   #   notes: In submission
 
-  - title: Multi-Click: Cross-Tab Web Automation via Action Generalization
+  - title: Multi-Click ":" Cross-Tab Web Automation via Action Generalization
     authors: Jiacheng Zhang, <strong>Jiawen Li</strong>, Maryam Arab, Steve Oney
     conference_short: UIST
     conference: The 38th Annual ACM Symposium on User Interface Software and Technology <strong>(UIST)</strong>, 2025.

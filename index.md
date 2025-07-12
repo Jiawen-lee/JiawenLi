@@ -10,7 +10,6 @@ My research interests lie at the intersection of *technical* Human-Computer Inte
 
 ## News
 - **[June. 2025]** I am joinning [Sandwich Lab](https://toby.li/) as a summer research intern at Univeristy of Notre Dame!
-
 - **[April. 2025]** My first co-authored paper Multiclick: cross-tab automation via action generalization has been accepted to UIST 2025!
 
 

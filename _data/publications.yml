@@ -11,7 +11,7 @@ main:
   #   notes: In submission
 
   - title: "AgentPbD: Interactive Agentic Workflow Generation from User Demonstration on Web Browsers"
-    authors: Jiawen Li, Zheng Ning, Yuan Tian, Toby Jia-Jun Li
+    authors: <strong>Jiawen Li</strong>, Zheng Ning, Yuan Tian, Toby Jia-Jun Li
     conference_short: VL/HCC Poster
     conference: The IEEE Symposium on Visual Languages and Human-Centric Computing <strong>(VL/HCC)</strong>, 2025.
     pdf: ./assets/files/VLHCC_2025_paper_156.pdf

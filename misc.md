@@ -80,7 +80,7 @@ Feel free to contact me if you are interested in such things and I can tell abou
     "午": { color: "#e74c3c", pinyin: "Wu" },
     "未": { color: "#a57c1b", pinyin: "Wei" },
     "申": { color: "#d4ac0d", pinyin: "Shen" },
-    "酉": { color: "#d4ac0d", pinyin: "Yu" },
+    "酉": { color: "#d4ac0d", pinyin: "Yo" },
     "戌": { color: "#a57c1b", pinyin: "Hsu" },
     "亥": { color: "#2980b9", pinyin: "Hai" }
   };
@@ -113,6 +113,15 @@ Feel free to contact me if you are interested in such things and I can tell abou
         `;
       }).join('')}
     </div>
+
+    <p style="text-align:center;margin-top:12px;font-size:0.85em;color:#666;">
+                <span style="color:#27ae60;">● Wood 木</span>　
+                <span style="color:#e74c3c;">● Fire 火</span>　
+                <span style="color:#a57c1b;">● Earth 土</span>　
+                <span style="color:#d4ac0d;">● Metal 金</span>　
+                <span style="color:#2980b9;">● Water 水</span>
+</p>
+
   `;
 
   document.getElementById("baziResult").innerHTML = html;

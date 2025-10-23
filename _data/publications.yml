@@ -10,21 +10,38 @@ main:
   #   image: ./assets/img/teaser_example_2.png
   #   notes: In submission
 
-  - title: "AgentPbD: Interactive Agentic Workflow Generation from User Demonstration on Web Browsers"
-    authors: <strong>Jiawen Li</strong>, Zheng Ning, Yuan Tian, Toby Jia-Jun Li
-    conference_short: VL/HCC Poster
-    conference: The IEEE Symposium on Visual Languages and Human-Centric Computing <strong>(VL/HCC)</strong>, 2025.
-    pdf: ./assets/files/VLHCC_2025_paper_156.pdf
+  # - title: "AgentPbD: Interactive Agentic Workflow Generation from User Demonstration on Web Browsers"
+  #   authors: <strong>Jiawen Li</strong>, Zheng Ning, Yuan Tian, Toby Jia-Jun Li
+  #   conference_short: VL/HCC Poster
+  #   conference: The IEEE Symposium on Visual Languages and Human-Centric Computing <strong>(VL/HCC)</strong>, 2025.
+  #   pdf: ./assets/files/VLHCC_2025_paper_156.pdf
+  #   # code: https://github.com/MrGiovanni/ContinualLearning
+  #   # bibtex: https://bib.yliu.me/MICCAI23.txt
+  #   image: ./assets/img/agentpbd-teaser.png
+
+  - title: "ALLOY: Generating Reusable Agent Workflows from User Demonstration"
+    authors:  <strong>Jiawen Li</strong>, Zheng Ning, Yuan Tian, Toby Jia-jun Li
+    conference_short: IUI 2026 (In submission)
+    conference: The ACM Conference on Intelligent User Interfaces  <strong>(IUI)</strong>, 2026.
+    pdf: https://arxiv.org/abs/2510.10049
     # code: https://github.com/MrGiovanni/ContinualLearning
     # bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/agentpbd-teaser.png
+    image: ./assets/img/alloy-teaser.png
 
+  - title: "Dark patterns meet GUI agents: LLM agent susceptibility to manipulative interfaces and the role of human oversight"
+    authors: Jingyu Tang*, Chaoran Chen*, <strong>Jiawen Li</strong>, Zhiping Zhang, Bingcan Guo, Ibrahim Khalilov, Simret Araya Gebreegziabher, Bingsheng Yao, Dakuo Wang, Yanfang Ye, Tianshi Li, Ziang Xiao, Yaxing Yao, Toby Jia-Jun Li
+    conference_short: CHI 2026 (In submission)
+    conference: The ACM Conference on Human Factors in Computing Systems  <strong>(CHI)</strong>, 2026.
+    pdf: https://arxiv.org/pdf/2509.10723
+    # code: https://github.com/MrGiovanni/ContinualLearning
+    # bibtex: https://bib.yliu.me/MICCAI23.txt
+    image: ./assets/img/darkpattern-agent-teaser.png
 
   - title: "Multi-Click: Cross-Tab Web Automation via Action Generalization"
     authors: Jiacheng Zhang, <strong>Jiawen Li</strong>, Maryam Arab, Steve Oney
     conference_short: UIST
     conference: The 38th Annual ACM Symposium on User Interface Software and Technology <strong>(UIST)</strong>, 2025.
-    pdf: ./assets/files/multiclick-final.pdf
+    pdf: https://dl.acm.org/doi/10.1145/3746059.3747780
     # code: https://github.com/MrGiovanni/ContinualLearning
     # bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/multiclick-teaser.png

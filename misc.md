@@ -11,29 +11,19 @@ Feel free to contact me if you are interested in such things and I can tell abou
 <img src="https://raw.githubusercontent.com/leeJiawen/blog-img/main/9cff50fa-1d86-4aad-a15b-1a8074671e3b.png" 
     style="display:block; margin: 0 auto; zoom:67%;" />
 
+
 <hr>
-<h3 style="text-align:center;">🧮 Calculate Your Four Pillars</h3>
-<p style="text-align:center;">Enter your birth date and time:</p>
+<h3>🧮 Calculate Your Four Pillars (生辰八字计算)</h3>
+<p>Enter your birth date and time (Gregorian):</p>
 
-<div style="text-align:center;">
-  <input type="datetime-local" id="birthInput" style="padding:6px; border-radius:6px; border:1px solid #ccc;">
-  <button onclick="calcBazi()" style="margin-left:6px; padding:6px 12px; border:none; border-radius:6px; background:#2c3e50; color:white;">Calculate</button>
-</div>
+<input type="datetime-local" id="birthInput" style="padding:6px; border-radius:6px; border:1px solid #ccc;">
+<button onclick="calcBazi()" style="margin-left:6px; padding:6px 12px; border:none; border-radius:6px; background:#2c3e50; color:white;">Calculate</button>
 
-<div id="baziResult" style="
-  margin-top:25px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  font-size:1.2em;
-  text-align:center;
-  min-height:200px;
-"></div>
+<div id="baziResult" style="margin-top:15px; font-size:1.1em;"></div>
 
 <script>
-// === Basic 八字 calculator (approximate) ===
+// === Basic 八字 calculator (approximate, for hobby/demo use) ===
+// Converts Gregorian year/month/day/hour into Heavenly Stem + Earthly Branch
 
 function calcBazi() {
   const input = document.getElementById("birthInput").value;

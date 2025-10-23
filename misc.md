@@ -13,10 +13,16 @@ Feel free to contact me if you are interested in such things and I can tell abou
 
 <hr>
 <h3 style="text-align:center;">Calculate Your Four Pillars</h3>
-<p style="text-align:center;">Enter your birth date and time:</p>
+<p style="text-align:center;">Enter your birth date, time and your gender:</p>
 
 <div style="text-align:center;">
   <input type="datetime-local" id="birthInput" style="padding:6px; border-radius:6px; border:1px solid #ccc;">
+  <select id="genderSelect" style="padding:8px 12px; border-radius:6px; border:1px solid #ccc; background-color:#fff; color:#333; cursor:pointer;">
+    <option value="">Select</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
   <button onclick="calcBazi()" style="margin-left:6px; padding:6px 12px; border:none; border-radius:6px; background:#2c3e50; color:white;">Calculate</button>
 </div>
 
@@ -34,8 +40,11 @@ Feel free to contact me if you are interested in such things and I can tell abou
 
 <script src="https://cdn.jsdelivr.net/npm/lunar-javascript@1.6.12/lunar.min.js"></script>
 
-<script>function calcBazi() {
+<script>
+
+function calcBazi() {
   const input = document.getElementById("birthInput").value;
+  const gender = document.getElementById("genderSelect").value;
   if (!input) return alert("Please enter your birth date and time.");
 
   // Step 1: Gregorian date input
@@ -122,8 +131,76 @@ Feel free to contact me if you are interested in such things and I can tell abou
                 <span style="color:#2980b9;">● Water 水</span>
 </p>
 
+<div style="display:flex; gap:12px; justify-content:center; margin-top:20px;">
+  <button onclick="sendToGPT()" 
+          style="background-color:#4A90E2; color:white; font-weight:500; padding:10px 22px; border:none; border-radius:6px; cursor:pointer; transition:0.2s; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+    Ask GPT
+  </button>
+
+  <button onclick="sendEmail()" 
+          style="background-color:#014687ff; color:white; font-weight:500; padding:10px 22px; border:none; border-radius:6px; cursor:pointer; transition:0.2s; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+    Ask Master Li
+  </button>
+</div>
+
+<div id="gptResponse" style="
+     display:none;
+     max-width:600px;
+     margin:20px auto;
+     padding:15px;
+     border-radius:8px;
+     background-color:#f9f9f9;
+     color:#333;
+     box-shadow:0 2px 6px rgba(0,0,0,0.05);
+     font-size:0.95em;
+     text-align: left;
+"></div>
   `;
 
   document.getElementById("baziResult").innerHTML = html;
+
+  return `${yearPillar} ${monthPillar} ${dayPillar} ${timePillar} ${gender}`;
 }
+async function sendToGPT() {
+  const bazi = calcBazi();
+  if (!bazi) return;
+
+  const responseDiv = document.getElementById("gptResponse");
+  responseDiv.style.display = "block";
+  responseDiv.innerHTML = "Sending Bazi to GPT...";
+
+  try {
+    const response = await fetch("https://flask-python-boilerplate-wine.vercel.app/api/gpt", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ prompt: bazi })
+    });
+
+    if (!response.ok) throw new Error("Network response was not ok");
+
+    const data = await response.json();
+
+    // Render GPT response to the page
+    responseDiv.innerHTML = `${data.response.replace(/\n/g, "<br>")}`;
+
+  } catch (error) {
+    console.error("Error sending Bazi to GPT:", error);
+    responseDiv.innerHTML = "Failed to get GPT response. See console for details.";
+  }
+}
+
+// Send via email
+function sendEmail() {
+  const bazi = calcBazi();
+  if (!bazi) return;
+
+  const email = "lijiawen@umich.edu";
+  const subject = encodeURIComponent("My Bazi");
+  const body = encodeURIComponent("Hello Master Li,\n\nHere is my Bazi:\n" + bazi);
+
+  // Create a temporary link and click it
+    const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+    window.open(url, "_blank");
+}
+
 </script>

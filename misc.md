@@ -29,6 +29,7 @@ Feel free to contact me if you are interested in such things and I can tell abou
   min-height:200px;
 "></div>
 
+{% raw %}
 <script>
 function calcBazi() {
   const input = document.getElementById("birthInput").value;
@@ -102,3 +103,4 @@ function calcBazi() {
   document.getElementById("baziResult").innerHTML = html;
 }
 </script>
+{% endraw %}

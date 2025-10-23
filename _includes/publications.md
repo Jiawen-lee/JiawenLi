@@ -16,7 +16,7 @@
         </div>
         <div class="col-sm-8" style="flex: 1; padding: 0 20px;">
           <div class="title" style="font-weight: bold; font-size: 16px; margin-bottom: 5px;">
-            <a href="{{ link.pdf }}" style="color: #00baff; text-decoration: none;">{{ link.title }}</a>
+            <a href="{{ link.pdf }}" >{{ link.title }}</a>
           </div>
           <div class="author" style="font-size: 14px; margin-bottom: 5px;">{{ link.authors }}</div>
           <div class="periodical" style="font-size: 13px; color: #aaa; margin-bottom: 10px;">

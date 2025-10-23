@@ -80,7 +80,7 @@ function calcBazi() {
     "Geng 庚": "#dcbf00ff", // Metal
     "Xin 辛": "#dcbf00ff", // Metal
     "Ren 壬": "#2980b9", // Water
-    "Gui 癸": "#2980b9"  // Water
+    "Gui 癸": "#2980b9",  // Water
     "Zi 子":"#2980b9",
     "Chou 丑":"#716121ff",
     "Yin 寅":"#27ae60",

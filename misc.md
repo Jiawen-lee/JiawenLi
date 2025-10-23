@@ -53,12 +53,12 @@ function calcBazi() {
   const yearBranchIndex = (year - 4) % 12;
   const yearPillar = stems[yearStemIndex] + " " + branches[yearBranchIndex];
 
-  // Month pillar (simplified rule based on Spring Festival not accounted)
+  // Month pillar
   const monthStemIndex = (yearStemIndex * 2 + month + 1) % 10;
   const monthBranchIndex = (month + 1) % 12;
   const monthPillar = stems[monthStemIndex] + " " + branches[monthBranchIndex];
 
-  // Day pillar (approximation)
+  // Day pillar
   const dayCount = Math.floor((date - new Date(year,0,0)) / (1000*60*60*24));
   const dayStemIndex = (dayCount + year * 5) % 10;
   const dayBranchIndex = (dayCount + year * 3) % 12;
@@ -69,13 +69,48 @@ function calcBazi() {
   const hourStemIndex = (dayStemIndex * 2 + hourBranchIndex) % 10;
   const hourPillar = stems[hourStemIndex] + " " + branches[hourBranchIndex];
 
-  const result = `
-    <b>Year Pillar:</b> ${yearPillar}<br>
-    <b>Month Pillar:</b> ${monthPillar}<br>
-    <b>Day Pillar:</b> ${dayPillar}<br>
-    <b>Hour Pillar:</b> ${hourPillar}
-  `;
-  document.getElementById("baziResult").innerHTML = result;
+  // Wuxing color mapping (by Heavenly Stem)
+  const wuxingColors = {
+    "Jia 甲": "#27ae60", // Wood
+    "Yi 乙": "#27ae60", // Wood
+    "Bing 丙": "#c0392b", // Fire
+    "Ding 丁": "#c0392b", // Fire
+    "Wu 戊": "#716121ff", // Earth
+    "Ji 己": "#716121ff", // Earth
+    "Geng 庚": "#dcbf00ff", // Metal
+    "Xin 辛": "#dcbf00ff", // Metal
+    "Ren 壬": "#2980b9", // Water
+    "Gui 癸": "#2980b9"  // Water
+    "Zi 子":"#2980b9",
+    "Chou 丑":"#716121ff",
+    "Yin 寅":"#27ae60",
+    "Mao 卯":"#27ae60",
+    "Chen 辰":"#716121ff",
+    "Si 巳":"#c0392b",
+    "Wu 午":"#c0392b",
+    "Wei 未":"#716121ff",
+    "Shen 申":"#dcbf00ff",
+    "You 酉":"#dcbf00ff",
+    "Xu 戌":"#716121ff",
+    "Hai 亥":"#2980b9"
+  };
+
+  const pillars = [
+    { label: "Year", value: yearPillar, color: wuxingColors[stems[yearStemIndex]] },
+    { label: "Month", value: monthPillar, color: wuxingColors[stems[monthStemIndex]] },
+    { label: "Day", value: dayPillar, color: wuxingColors[stems[dayStemIndex]] },
+    { label: "Hour", value: hourPillar, color: wuxingColors[stems[hourStemIndex]] }
+  ];
+
+  // Render centered & colored
+  const html = pillars.map(p => `
+    <div style="color:${p.color}; font-weight:bold; display:flex; flex-direction:column; align-items:center;">
+      <span style="font-size:0.9em; color:#555;">${p.label} Pillar</span>
+      <span style="font-size:1.3em;">${p.value}</span>
+    </div>
+  `).join("");
+
+  document.getElementById("baziResult").innerHTML = html;
 }
 </script>
 </div>

@@ -12,13 +12,13 @@ Feel free to contact me if you are interested in such things and I can tell abou
     style="display:block; margin: 0 auto; zoom:67%;" />
 
 <hr>
-<h3 style="text-align:center;">Calculate Your Four Pillars</h3>
+<h3 style="text-align:center;">🧮 Calculate Your Four Pillars</h3>
 <p style="text-align:center;">Enter your birth date and time:</p>
 
 <div style="text-align:center;">
   <input type="datetime-local" id="birthInput" style="padding:6px; border-radius:6px; border:1px solid #ccc;">
   <button onclick="calcBazi()" style="margin-left:6px; padding:6px 12px; border:none; border-radius:6px; background:#2c3e50; color:white;">Calculate</button>
-</div>
+
 
 <div id="baziResult" style="
   margin-top:25px;
@@ -78,3 +78,4 @@ function calcBazi() {
   document.getElementById("baziResult").innerHTML = result;
 }
 </script>
+</div>

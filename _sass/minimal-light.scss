@@ -605,8 +605,6 @@ body {
   font-size: 1.05rem;             /* slightly larger text */
   line-height: 1.65;              /* more relaxed line height */
   letter-spacing: 0.01em;
-  background: #fdfdfd;            /* softer white background */
-  color: #222;
 }
 
 /* Wider main content area */
@@ -626,14 +624,10 @@ body {
 
 /* Publication image / teaser styling */
 .pub-row img {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background: #fff;
   width: 100%;
   max-width: 380px;               /* balanced teaser size */
   height: auto;
   object-fit: cover;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
   transition: transform 0.2s ease;
 }
 .pub-row img:hover {
@@ -643,12 +637,10 @@ body {
 /* Typography consistency */
 h1, h2, h3 {
   font-weight: 600;
-  color: #043361;
 }
 
 p, li {
   font-size: 1.05rem;
-  color: #333;
 }
 
 /* Make links stand out just a bit more */

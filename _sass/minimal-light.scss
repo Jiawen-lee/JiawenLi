@@ -656,11 +656,6 @@ a:hover {
 
 /* Dark mode adaptation */
 @media (prefers-color-scheme: dark) {
-  body {
-    background: #1f1f27;
-    color: #e2e3e7;
-  }
-
   .wrapper {
     width: 1080px;
   }

@@ -5,7 +5,7 @@
     {% for link in site.data.publications.main %}
     <li style="list-style: none; margin-bottom: 40px;">
       <div class="pub-row" style="display: flex; flex-wrap: wrap; align-items: flex-start;">
-        <div style="flex: 0 0 35%; max-width: 35%; padding: 10px; display: flex; align-items: center; justify-content: center;">
+        <div style="flex: 0 0 35%; max-width: 100%; padding: 10px; display: flex; align-items: center; justify-content: center;">
           {% if link.image %}
           <div style="width: 100%; height: 180px; display: flex; align-items: center; justify-content: center; border: 1px solid #ccc; border-radius: 10px; background: white; overflow: hidden;">
             <img src="{{ link.image }}" 

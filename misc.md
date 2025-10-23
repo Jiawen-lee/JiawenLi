@@ -19,10 +19,19 @@ Feel free to contact me if you are interested in such things and I can tell abou
 <input type="datetime-local" id="birthInput" style="padding:6px; border-radius:6px; border:1px solid #ccc;">
 <button onclick="calcBazi()" style="margin-left:6px; padding:6px 12px; border:none; border-radius:6px; background:#2c3e50; color:white;">Calculate</button>
 
-<div id="baziResult" style="margin-top:15px; font-size:1.1em;"></div>
+<div id="baziResult" style="
+  margin-top:25px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  font-size:1.2em;
+  text-align:center;
+  min-height:200px;
+"></div>
 
 <script>
-// === Basic 八字 calculator (approximate, for hobby/demo use) ===
 // Converts Gregorian year/month/day/hour into Heavenly Stem + Earthly Branch
 
 function calcBazi() {
@@ -43,12 +52,12 @@ function calcBazi() {
   const yearBranchIndex = (year - 4) % 12;
   const yearPillar = stems[yearStemIndex] + " " + branches[yearBranchIndex];
 
-  // Month pillar
+  // Month pillar (simplified rule based on Spring Festival not accounted)
   const monthStemIndex = (yearStemIndex * 2 + month + 1) % 10;
   const monthBranchIndex = (month + 1) % 12;
   const monthPillar = stems[monthStemIndex] + " " + branches[monthBranchIndex];
 
-  // Day pillar
+  // Day pillar (approximation)
   const dayCount = Math.floor((date - new Date(year,0,0)) / (1000*60*60*24));
   const dayStemIndex = (dayCount + year * 5) % 10;
   const dayBranchIndex = (dayCount + year * 3) % 12;
@@ -84,7 +93,7 @@ function calcBazi() {
     "Xu 戌":"#716121ff",
     "Hai 亥":"#2980b9"
   };
-
+  
   const pillars = [
     { label: "Year", value: yearPillar, color: wuxingColors[stems[yearStemIndex]] },
     { label: "Month", value: monthPillar, color: wuxingColors[stems[monthStemIndex]] },
@@ -99,6 +108,7 @@ function calcBazi() {
       <span style="font-size:1.3em;">${p.value}</span>
     </div>
   `).join("");
+
 
   document.getElementById("baziResult").innerHTML = html;
 }

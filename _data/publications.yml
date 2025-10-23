@@ -22,7 +22,7 @@ main:
   - title: "ALLOY: Generating Reusable Agent Workflows from User Demonstration"
     authors:  <strong>Jiawen Li</strong>, Zheng Ning, Yuan Tian, Toby Jia-jun Li
     conference_short: IUI (In submission)
-    conference: (In submission) <strong>(IUI)</strong>, 2026.
+    conference: <strong>(In submission)</strong> IUI 2026
     pdf: https://arxiv.org/abs/2510.10049
     # code: https://github.com/MrGiovanni/ContinualLearning
     # bibtex: https://bib.yliu.me/MICCAI23.txt
@@ -31,7 +31,7 @@ main:
   - title: "Dark patterns meet GUI agents: LLM agent susceptibility to manipulative interfaces and the role of human oversight"
     authors: Jingyu Tang*, Chaoran Chen*, <strong>Jiawen Li</strong>, Zhiping Zhang, Bingcan Guo, Ibrahim Khalilov, Simret Araya Gebreegziabher, Bingsheng Yao, Dakuo Wang, Yanfang Ye, Tianshi Li, Ziang Xiao, Yaxing Yao, Toby Jia-Jun Li
     conference_short: CHI (In submission)
-    conference: (In submission) <strong>(CHI)</strong>, 2026.
+    conference: <strong>(In submission)</strong> CHI 2026
     pdf: https://arxiv.org/pdf/2509.10723
     # code: https://github.com/MrGiovanni/ContinualLearning
     # bibtex: https://bib.yliu.me/MICCAI23.txt
@@ -40,7 +40,7 @@ main:
   - title: "Multi-Click: Cross-Tab Web Automation via Action Generalization"
     authors: Jiacheng Zhang, <strong>Jiawen Li</strong>, Maryam Arab, Steve Oney
     conference_short: UIST
-    conference: <strong>(UIST)</strong>, 2025.
+    conference: <strong>UIST 2025</strong>
     pdf: https://dl.acm.org/doi/10.1145/3746059.3747780
     # code: https://github.com/MrGiovanni/ContinualLearning
     # bibtex: https://bib.yliu.me/MICCAI23.txt

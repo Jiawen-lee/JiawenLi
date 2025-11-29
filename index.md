@@ -6,7 +6,7 @@ layout: homepage
 
 I am a senior undergraduate pursuing a dual degree in Mechanical Engineering at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/) and Data Science Engineering at the [University of Michigan](https://umich.edu/). I have the privilege of being advised by Professor [Steve Oney](https://from.so/) at the University of Michigan in web automation, and I had a wonderful summer at the [University of Notre Dame](https://www.nd.edu/) under the mentorship of Professor [Toby Li](https://toby.li/) in human-agent collabration. 
 
-My research explores human-AI interaction systems that empower end-users to leverage AI’s potential through intuitive and collaborative interfaces.
+My research explores systems that collaborate **not after we think, but as we act.**
 
 
 ## News

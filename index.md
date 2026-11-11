@@ -4,9 +4,9 @@ layout: homepage
 
 ## About Me
 
-I am a first-year Ph.D. student in Computer Science at [Purdue University](https://www.purdue.edu/), advised by Professor [Jason Wu](https://jasonwunix.com/). My research interests lie broadly in human-computer interaction and AI, with a particular focus on generative UI and intelligent interactive systems.
+I am a first-year Ph.D. student in Computer Science at <a href="https://www.purdue.edu/"><img class="school-icon" src="{{ "/assets/img/schools/purdue.png" | relative_url }}" alt="" width="24" height="24">Purdue University</a>, advised by Professor [Jason Wu](https://jasonwunix.com/). My research interests lie broadly in human-computer interaction and AI, with a particular focus on generative UI and intelligent interactive systems.
 
-Previously, I studied Mechanical Engineering at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/) and Data Science Engineering at the [University of Michigan](https://umich.edu/). At Michigan, I had the privilege of working with Professor [Steve Oney](https://from.so/) on web automation. I also spent a wonderful summer at the [University of Notre Dame](https://www.nd.edu/), where I worked with Professor [Toby Li](https://toby.li/) on human-agent collaboration.
+Previously, I studied Mechanical Engineering at <a href="https://en.sjtu.edu.cn/"><img class="school-icon" src="{{ "/assets/img/schools/sjtu.ico" | relative_url }}" alt="" width="24" height="24">Shanghai Jiao Tong University</a> and Data Science Engineering at the <a href="https://umich.edu/"><img class="school-icon" src="{{ "/assets/img/schools/michigan.ico" | relative_url }}" alt="" width="24" height="24">University of Michigan</a>. At Michigan, I had the privilege of working with Professor [Steve Oney](https://from.so/) on web automation. I also spent a wonderful summer at the <a href="https://www.nd.edu/"><img class="school-icon" src="{{ "/assets/img/schools/notre-dame.png" | relative_url }}" alt="" width="24" height="24">University of Notre Dame</a>, where I worked with Professor [Toby Li](https://toby.li/) on human-agent collaboration.
 
 
 ## News
@@ -19,5 +19,3 @@ Previously, I studied Mechanical Engineering at [Shanghai Jiao Tong University](
 {% include_relative _includes/publications.md %}
 
 {% include_relative _includes/posters.md %}
-
-{% include_relative _includes/services.md %}

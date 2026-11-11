@@ -15,9 +15,9 @@ Feel free to contact me if you are interested in such things and I can tell abou
 <h3 style="text-align:center;">Calculate Your Four Pillars</h3>
 <p style="text-align:center;">Enter your birth date, time and your gender:</p>
 
-<div style="text-align:center;">
-  <input type="datetime-local" id="birthInput" style="padding:6px; border-radius:6px; border:1px solid #ccc;">
-  <select id="genderSelect" style="padding:8px 12px; border-radius:6px; border:1px solid #ccc; background-color:#fff; color:#333; cursor:pointer;">
+<div class="bazi-form">
+  <input type="datetime-local" id="birthInput" aria-label="Birth date and time" style="padding:6px; border-radius:6px; border:1px solid #ccc;">
+  <select id="genderSelect" aria-label="Gender" style="padding:8px 12px; border-radius:6px; border:1px solid #ccc; background-color:#fff; color:#333; cursor:pointer;">
     <option value="">Select</option>
     <option value="male">Male</option>
     <option value="female">Female</option>
@@ -103,27 +103,27 @@ function calcBazi() {
 
   // Step 5: Render with Pinyin
   const html = `
-    <div style="display:flex;justify-content:center;align-items:flex-end;gap:40px;margin-top:25px;">
+    <div class="bazi-pillars">
       ${pillars.map(p => {
         const stem = p.text[0];
         const branch = p.text[1];
         const stemInfo = wuxingColors[stem];
         const branchInfo = wuxingColors[branch];
         return `
-          <div style="display:flex;flex-direction:column;align-items:center;">
-            <span style="margin-top:6px;font-size:0.9em;color:#555;">${p.label}</span>
+          <div class="bazi-pillar">
+            <span class="bazi-label">${p.label}</span>
             <span style="font-size:2em;font-weight:bold;color:${stemInfo.color};">
-              ${stem} <span style="font-size:0.7em;color:#555;">${stemInfo.pinyin}</span>
+              ${stem} <span class="bazi-pinyin">${stemInfo.pinyin}</span>
             </span>
             <span style="font-size:2em;font-weight:bold;color:${branchInfo.color};">
-              ${branch} <span style="font-size:0.7em;color:#555;">${branchInfo.pinyin}</span>
+              ${branch} <span class="bazi-pinyin">${branchInfo.pinyin}</span>
             </span>
           </div>
         `;
       }).join('')}
     </div>
 
-    <p style="text-align:center;margin-top:12px;font-size:0.85em;color:#666;">
+    <p class="bazi-legend">
                 <span style="color:#27ae60;">● Wood 木</span>　
                 <span style="color:#e74c3c;">● Fire 火</span>　
                 <span style="color:#a57c1b;">● Earth 土</span>　

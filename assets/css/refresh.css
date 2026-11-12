@@ -136,6 +136,13 @@ footer:empty { display: none; }
 .publications ol.bibliography li .links a.btn:hover { border-color: var(--accent); }
 .publication-note { color: var(--accent); font-size: 17px; }
 @media (prefers-color-scheme: dark) {
+  .auto-dark .publications .author strong {
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
   body.auto-dark {
     --page-bg: #20212b;
     --surface: #222c36;
